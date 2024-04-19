@@ -1,13 +1,29 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../style/app.css'
 import Form from "./Form.jsx";
 import ToDoList from "./ToDoList.jsx";
 
 function App() {
+    // Charger les rappels depuis le stockage local au chargement de l'application
+    const loadTodosFromLocalStorage = () => {
+        const todosJSON = localStorage.getItem('todos');
+        return todosJSON ? JSON.parse(todosJSON) : [];
+    };
 
-    const [todos, setTodos] = useState([]);
+    const [todos, setTodos] = useState(loadTodosFromLocalStorage());
 
-    function addTodo(text) {
+    // Fonction pour enregistrer les rappels dans le stockage local
+    const saveTodosToLocalStorage = (todos) => {
+        localStorage.setItem('todos', JSON.stringify(todos));
+    };
+
+    // Mettre à jour le stockage local chaque fois que les todos changent
+    useEffect(() => {
+        saveTodosToLocalStorage(todos);
+    }, [todos]);
+
+
+    const  addTodo = (text) => {
         const newTodo = {
             id: Date.now(),
             isDone: false,
@@ -20,9 +36,11 @@ function App() {
 
     return (
         <div className={'App'}>
-            <h1 className={'tilte1'}>My Todo app</h1>
-                <Form addTodo={addTodo} />
-                <ToDoList todos={todos} setTodos={setTodos}/>
+            <div className="contentApp">
+                <h1 className={'tilte1'}>My Todo app</h1>
+                    <Form addTodo={addTodo} />
+                    <ToDoList todos={todos} setTodos={setTodos}/>
+            </div>
         </div>
     );
 }
