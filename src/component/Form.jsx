@@ -1,14 +1,33 @@
 import { useState } from 'react'
-import InputField from "./form/InputField.jsx";
-import AddTodo  from "./form/AddTodo.jsx";
 
-function Form() {
+function Form({ addTodo }) {
+
+    const [todo, setTodo] = useState('')
+    const addToList = (event) => {
+        event.preventDefault();
+            if (todo.trim() !== '') {
+                addTodo(todo)
+                console.log(todo)
+                setTodo('');
+            } else {
+                alert('Veuillez entrer un rappel valide.');
+            }
+    }
 
     return (
         <>
-            <label>Form</label>
-            <InputField />
-            <AddTodo />
+            <form className={'formulaire'} onSubmit={addToList}>
+            <input
+                className={'rappel'}
+                type={'text'}
+                placeholder={'rappel'}
+                id={'id'}
+                value={todo}
+                onChange={ (event) => setTodo(event.target.value) }
+            />
+
+            <button type="submit">GO</button>
+            </form>
         </>
     )
 }
