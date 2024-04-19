@@ -1,24 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 
-const ToDoList = ({ todos, addTodo }) => {
-
-
-    // Checkbox
-    const [isCheckedBox, setIsCheckedBox] = useState(false);
-    const handleCheckboxChange = () => {
-        setIsCheckedBox(!isCheckedBox);
-    };
-
-
+const ToDoList = ({ todos, setTodos }) => {
     // Update isDone
     const toggleTask = (taskId) => {
-        setToDoList(todos.map(task => task.id === taskId ? { ...task, isDone: !task.isDone } : task));
+        setTodos(
+            todos.map((task) => {
+                const Id = task.id
+
+                Id === taskId ? {...task, isDone: !task.isDone} : task
+                Id === taskId ? console.log(task.content) : task
+
+            }
+        )
     };
 
 
 
-
-
+    // a corriger
     return (
         <>
             <h2 className={'tilte2'}>Todos :</h2>
@@ -26,7 +24,12 @@ const ToDoList = ({ todos, addTodo }) => {
                 {todos.map((todo) => (
                     <li className={'todo'} key={todo.id}>
                         {/* Utilisation de la case à cocher avec son état propre */}
-                        <input className={'checkbox'} type="checkbox" checked={todo.isDone} onChange={() => toggleTask(todo.id)} />
+                        <input
+                            className={'checkbox'}
+                            type="checkbox"
+                            checked={todo.isDone}
+                            onChange={() => toggleTask(todo.id)}
+                        />
                         {todo.content}
                     </li>
                 ))}

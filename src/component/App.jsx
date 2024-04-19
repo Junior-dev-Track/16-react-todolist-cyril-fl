@@ -22,7 +22,7 @@ function App() {
         <div className={'App'}>
             <h1 className={'tilte1'}>My Todo app</h1>
                 <Form addTodo={addTodo} />
-                <ToDoList todos={todos} addTodo={addTodo}/>
+                <ToDoList todos={todos} setTodos={setTodos}/>
         </div>
     );
 }
