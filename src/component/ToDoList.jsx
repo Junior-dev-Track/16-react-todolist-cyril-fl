@@ -1,3 +1,4 @@
+/*
 
 
 
@@ -25,7 +26,7 @@ const ToDoList = ({ todos, setTodos }) => {
             <ul className={'todoList'}>
                 {todos.map( todo => (
                     <li className={'todo'} key={todo.id}>
-                        {/* Utilisation de la case à cocher avec son état propre */}
+                        {/!* Utilisation de la case à cocher avec son état propre *!/}
                         <div className="checkbox">
                             <input
                                 id={`myCheckbox${todo.id}`}
@@ -43,4 +44,4 @@ const ToDoList = ({ todos, setTodos }) => {
     );
 };
 
-export default ToDoList;
+export default ToDoList;*/
