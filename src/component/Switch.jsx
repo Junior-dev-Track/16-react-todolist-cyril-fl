@@ -9,9 +9,9 @@ const Switch = () => {
 
         // // Ajoutez ici la logique pour mettre à jour les variables CSS pour le mode sombre
         if (!toggleSwitch) {
-            document.body.setAttribute('data-theme', 'dark'); // Active le mode sombre
+            document.body.setAttribute('data-theme', 'alter'); // Active le mode sombre
         } else {
-            document.body.setAttribute('data-theme', 'light'); // Active le mode clair
+            document.body.setAttribute('data-theme', 'normal'); // Active le mode clair
         }
     };
 

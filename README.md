@@ -3,6 +3,8 @@
 
 Functional to do list made with React JS
 * Add things at your to do list
-* Check your to do and see them fly away
+* Check your to do and see them fly away ( for ever )
 * Night and Day mode
-  * Auto adapt like your browser or you can choses.
+  * Auto adapt like your browser.
+  * if you're not happy you can change it manually
+* Notes your thoughts but just that because it's not a to do list

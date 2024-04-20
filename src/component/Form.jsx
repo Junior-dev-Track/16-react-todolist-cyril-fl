@@ -18,9 +18,9 @@ function Form({ addTodo }) {
         <>
             <form className={'formulaire'} onSubmit={addToList}>
             <input
-                className={'rappel'}
+                className={'champText'}
                 type={'text'}
-                placeholder={'rappel'}
+                placeholder={'T\'as oublié quoi ?'}
                 id={'id'}
                 value={todo}
                 onChange={ (event) => setTodo(event.target.value) }

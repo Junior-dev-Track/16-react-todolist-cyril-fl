@@ -1,32 +1,37 @@
-
 // Switch
 $switchBordure: 3px;
-
+* {
+  transition: all 0.2s ease;
+}
 .switch {
   height: 30px;
   aspect-ratio: 9/5;
-  background: $red;
+  background: $primary;
   display: flex;
-  margin: 20px 20px;
   align-self: flex-end;
-  border: $switchBordure solid $red;
+  border: $switchBordure solid $primary;
   border-radius: 50px;
+  align-self: end;
   align-items: center;
   transform: translateX(0); /* Position initiale */
+  grid-column: 18;
+  grid-row: 1;
+
 
   .round {
     height: 90%;
     aspect-ratio: 1/1;
-    background: aliceblue;
+    background: $secondary;
     border-radius: 50%;
     transition: transform 0.35s ease; /* Ajout de la transition */
     transform: translateX(0); /* Position initiale */
   }
   .round:hover {
-    background: cornflowerblue;
+    background: $secondaryBis;
+  ;
   }
 }
-
 .selfRight .round {
   transform: translateX(calc(100% + $switchBordure));  /* + 3px correspond à la largeur de la bordure */
 }
+

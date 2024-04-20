@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
-// import '../style/app.css'
+import '../style/app.css'
 import Form from "./Form.jsx";
 import ToDoList from "./ToDoList.jsx";
 import Switch from "./Switch.jsx"
+import Notes from "./Notes.jsx"
 
 const App = () => {
     // Charger les rappels depuis le stockage local au chargement de l'application
@@ -37,10 +38,14 @@ const App = () => {
     return (
         <>
             <div className={'App'}>
-                    <h1 className={'tilte1 logo'}>My Todo app</h1>
-                    <Switch />
+                <h1 className={'tilte1 logo'}>My Todo app</h1>
+                <Switch/>
+                <div className="blockList">
                     <Form addTodo={addTodo}/>
                     <ToDoList todos={todos} setTodos={setTodos}/>
+                </div>
+
+                <Notes/>
             </div>
         </>
     )

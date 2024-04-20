@@ -23,13 +23,13 @@
   top: 1px;
   width: 10px; /* Ajustez la taille de votre case à cocher */
   aspect-ratio: 1/1;
-  border: 3px solid $red; /* Couleur de la bordure de la case à cocher */
+  border: 3px solid $primary; /* Couleur de la bordure de la case à cocher */
   border-radius: 50%; /* Bordure arrondie */
-  background-color: $white;
+  background-color: unset;
 }
 
 .checkbox input[type="checkbox"]:checked + label:before {
-  background-color: $red;
+  background-color: $primary;
 }
 
 .checkbox label:after {
@@ -37,7 +37,7 @@
   position: absolute;
   width: 10px;
   aspect-ratio: 1/1;
-  border: 2px solid $white;
+  border: 2px solid $secondary;
   border-radius: 50%;
   display: none;
   left: 1px;

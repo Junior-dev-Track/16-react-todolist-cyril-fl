@@ -1,0 +1,35 @@
+.champText {
+  background: $neutral;
+  color: $red;
+  font-family: "Noto Sans", Arial, sans-serif;
+  padding: 3px 10px;
+  border-radius: 10px;
+  border: 3px solid rgba($red, 1);
+  flex : 1;
+}
+.champText:focus {
+  outline: none; /* Supprime le contour bleu */
+}
+.champText::placeholder {
+  color: $red;
+}
+
+// notes
+
+.notefield {
+  grid-column: 3 / span 14;
+  grid-row: 1/ span 10;
+  padding: 2vh 2vw;
+  text-align: left;
+  vertical-align: top;
+  resize: none;
+
+  //align-self: flex-start;
+  //justify-self: flex-start;
+}
+
+input[type="text"] {
+  text-align: left;
+  vertical-align: top;
+}
+

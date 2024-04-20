@@ -1,7 +1,7 @@
 @import "../00-Global/colors";
 // Go
 button {
-  background: $red;
+  background: $primary;
   color: $white;
   font-family: "Rubik Mono One", monospace;
     margin: 0; /* Réinitialise la marge */
@@ -12,36 +12,9 @@ button {
 }
 
 button:hover {
-  background: $purpleDark;
+  background: $secondaryBis;
 }
 
 button:active {
   background: $purple;
-}
-
-// Input
-.rappel {
-  //background: $white;
-  color: $red;
-  font-family: "Noto Sans", Arial, sans-serif;
-  padding: 3px 10px;
-  border-radius: 10px;
-  border: 3px solid rgba($red, 1);
-  flex : 1;
-}
-.rappel:focus {
-  outline: none; /* Supprime le contour bleu */
-}
-input[type="text"]::placeholder {
-  color: $red;
-}
-
-
-
-// formulaire
-.formulaire {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
 }
