@@ -1,0 +1,15 @@
+.test {
+  background: red;
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+
+.none {
+  display: none;
+}
+
+.spacer {
+  flex-basis: 10%;
+  aspect-ratio: 1/1;
+  flex: 1;
+}

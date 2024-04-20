@@ -1,15 +1,17 @@
+// Global
+@import "./00-Global/reset";
+@import "./00-Global/test";
+@import "./00-Global/colors";
+
 // Font
 @import "./01-Font/fontStyle";
 
-// Global
-@import "./00-Global/reset";
-/*
-@import "./global/test";
-@import "./global/colors";
-
 // Asset
-@import "./assets/button";
-@import "./assets/checkboxes";
+@import "./02-Assets/logo";
+
+
+//@import "./assets/button";
+//@import "./assets/checkboxes";
 
 //
-@import "./App/style";*/
+//@import "./App/style";*/

@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap');
+@import "../00-Global/colors";
+
+.tilte1 {
+  font-family: 'Rubik Mono One', monospace;
+  font-size: 1.5rem;
+  color : $red;
+  margin-bottom: 3px;
+}
+
+.tilte2 {
+  font-family: 'Rubik Mono One', monospace;
+  font-size: 1rem;
+  //color : $red;
+  margin-top: 5px;
+  margin-bottom: 3px;
+
+}
+
+.todo {
+  font-family: "Noto Sans", Arial, sans-serif;
+  font-size: 0.8rem;
+  //color : $black;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+
+
+
+
+
+
