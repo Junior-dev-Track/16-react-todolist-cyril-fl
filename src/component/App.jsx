@@ -1,8 +1,8 @@
-// import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 // import '../style/app.css'
-import Form from "./Form.jsx";
-import ToDoList from "./ToDoList.jsx";
-// import Switch from "./Switch.jsx"
+// import Form from "./Form.jsx";
+// import ToDoList from "./ToDoList.jsx";
+// import Switch from "./Switch.jsx"vit
 
 const App = () => {
     // // Charger les rappels depuis le stockage local au chargement de l'application

@@ -1,18 +1,12 @@
-/* Error: Undefined variable.
- *   ,
- * 7 |   color : $red;
- *   |           ^^^^
- *   '
- *   font/_textStyle.scss 7:11  @import
- *   app.scss 2:9               root stylesheet */
+/*
+@import "./global/test";
+@import "./global/colors";
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 7 \2502    color : $red;\a   \2502            ^^^^\a   \2575 \a   font/_textStyle.scss 7:11  @import\a   app.scss 2:9               root stylesheet";
-}
+// Asset
+@import "./assets/button";
+@import "./assets/checkboxes";
+
+//
+@import "./App/style";*/
+
+/*# sourceMappingURL=app.css.map */
