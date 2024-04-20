@@ -29,7 +29,8 @@ body {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(18, 1fr);
-  //background-color: pink;
+  background-color: $white;
+  color: $black;
   padding: 2vh 2vw;
 }
 
