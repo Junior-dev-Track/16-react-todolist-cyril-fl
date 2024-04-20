@@ -1,0 +1,21 @@
+:root {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #B53471;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --black: #333;
+        --grey: #444;
+        --white: #555;
+        --red: white;
+        --purple: #777;
+        --purpleDark: #888;
+        --pink: #999;
+    }
+}

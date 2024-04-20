@@ -1,18 +1,159 @@
-/* Error: Undefined variable.
- *   ,
- * 7 |   color : $red;
- *   |           ^^^^
- *   '
- *   01-Font/_fontStyle.scss 7:11  @import
- *   app.scss 9:9                  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 7 \2502    color : $red;\a   \2502            ^^^^\a   \2575 \a   01-Font/_fontStyle.scss 7:11  @import\a   app.scss 9:9                  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap");
+:root {
+  --black: #0D1114;
+  --grey: #1F2426;
+  --white: #FAFAFA;
+  --red: #B53471;
+  --purple: #B53471;
+  --purpleDark: #833471;
+  --pink: #FDA7DF;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #333;
+    --grey: #444;
+    --white: #555;
+    --red: white;
+    --purple: #777;
+    --purpleDark: #888;
+    --pink: #999;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+  padding: 2vh 2vw;
+}
+
+.test {
+  background: red;
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+
+.none {
+  display: none;
+}
+
+.spacer {
+  flex-basis: 10%;
+  aspect-ratio: 1/1;
+  flex: 1;
+}
+
+:root {
+  --black: #0D1114;
+  --grey: #1F2426;
+  --white: #FAFAFA;
+  --red: #B53471;
+  --purple: #B53471;
+  --purpleDark: #833471;
+  --pink: #FDA7DF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #333;
+    --grey: #444;
+    --white: #555;
+    --red: white;
+    --purple: #777;
+    --purpleDark: #888;
+    --pink: #999;
+  }
+}
+:root {
+  --black: #0D1114;
+  --grey: #1F2426;
+  --white: #FAFAFA;
+  --red: #B53471;
+  --purple: #B53471;
+  --purpleDark: #833471;
+  --pink: #FDA7DF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #333;
+    --grey: #444;
+    --white: #555;
+    --red: white;
+    --purple: #777;
+    --purpleDark: #888;
+    --pink: #999;
+  }
+}
+.tilte1 {
+  font-family: "Rubik Mono One", monospace;
+  font-size: 1.5rem;
+  color: var(--red);
+  margin-bottom: 3px;
+}
+
+.tilte2 {
+  font-family: "Rubik Mono One", monospace;
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.todo {
+  font-family: "Noto Sans", Arial, sans-serif;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+:root {
+  --black: #0D1114;
+  --grey: #1F2426;
+  --white: #FAFAFA;
+  --red: #B53471;
+  --purple: #B53471;
+  --purpleDark: #833471;
+  --pink: #FDA7DF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #333;
+    --grey: #444;
+    --white: #555;
+    --red: white;
+    --purple: #777;
+    --purpleDark: #888;
+    --pink: #999;
+  }
+}
+.logo {
+  grid-column: 1/span 4;
+  grid-raw: 1;
+}
+
+/*# sourceMappingURL=app.css.map */
