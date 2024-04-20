@@ -1,4 +1,4 @@
-[data-theme='dark'] {
+.dark-theme {
   $black: #0D1114;
   $grey: #1F2426;
   $white: #FAFAFA;
@@ -8,7 +8,7 @@
   $pink: #FDA7DF;
 }
 
-[data-theme='light'] {
+.light-theme {
   $black: #0D1114;
   $grey: #1F2426;
   $white: #FAFAFA;
@@ -17,3 +17,11 @@
   $purpleDark: #833471;
   $pink: #FDA7DF;
 }
+
+
+
+
+
+
+
+
