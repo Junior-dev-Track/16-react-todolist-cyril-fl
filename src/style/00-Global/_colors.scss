@@ -1,12 +1,21 @@
 @import './colorTheme';
 
 // Utilisation des variables dans ton code SCSS
+// By element
+$backgroundColor: var(--white);
+$textColor: var(--black);
 
-$backgroundColor: var(--black);
-$grey: var(--grey);
-$textColor: var(--white);
+
+// newnnkn
+//doest it ?
+
+
+
+
+
+//by color
 $white: var(--white);
-
+$grey: var(--grey);
 $red: var(--red);
 $purple: var(--purple);
 $purpleDark: var(--purpleDark);
