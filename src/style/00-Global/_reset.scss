@@ -29,8 +29,8 @@ body {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(18, 1fr);
-  background-color: $white;
-  color: $black;
+  background-color: $backgroundColor;
+  color: $textColor;
   padding: 2vh 2vw;
 }
 

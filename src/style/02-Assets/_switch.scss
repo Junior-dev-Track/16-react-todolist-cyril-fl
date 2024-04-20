@@ -1,0 +1,32 @@
+
+// Switch
+$switchBordure: 3px;
+
+.switch {
+  height: 30px;
+  aspect-ratio: 9/5;
+  background: $red;
+  display: flex;
+  margin: 20px 20px;
+  align-self: flex-end;
+  border: $switchBordure solid $red;
+  border-radius: 50px;
+  align-items: center;
+  transform: translateX(0); /* Position initiale */
+
+  .round {
+    height: 90%;
+    aspect-ratio: 1/1;
+    background: aliceblue;
+    border-radius: 50%;
+    transition: transform 0.35s ease; /* Ajout de la transition */
+    transform: translateX(0); /* Position initiale */
+  }
+  .round:hover {
+    background: cornflowerblue;
+  }
+}
+
+.selfRight .round {
+  transform: translateX(calc(100% + $switchBordure));  /* + 3px correspond à la largeur de la bordure */
+}

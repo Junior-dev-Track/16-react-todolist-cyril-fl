@@ -1,16 +1,54 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap");
-:root {
-  --black: #0D1114;
-  --grey: #1F2426;
-  --white: #FAFAFA;
-  --red: #ED4C67;
-  --purple: #B53471;
-  --purpleDark: #833471;
-  --pink: #FDA7DF;
+@media (prefers-color-scheme: light) {
+  :root {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-them=light] {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-theme=dark] {
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-them=dark] {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-theme=light] {
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
@@ -48,8 +86,8 @@ body {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(18, 1fr);
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--black);
+  color: var(--white);
   padding: 2vh 2vw;
 }
 
@@ -69,16 +107,35 @@ body {
   flex: 1;
 }
 
-:root {
-  --black: #0D1114;
-  --grey: #1F2426;
-  --white: #FAFAFA;
-  --red: #ED4C67;
-  --purple: #B53471;
-  --purpleDark: #833471;
-  --pink: #FDA7DF;
+@media (prefers-color-scheme: light) {
+  :root {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-them=light] {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-theme=dark] {
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --black: #FAFAFA;
@@ -89,19 +146,74 @@ body {
     --purpleDark: #833471;
     --pink: #FDA7DF;
   }
+  [data-them=dark] {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-theme=light] {
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
 }
-:root {
-  --black: #0D1114;
-  --grey: #1F2426;
-  --white: #FAFAFA;
-  --red: #ED4C67;
-  --purple: #B53471;
-  --purpleDark: #833471;
-  --pink: #FDA7DF;
+@media (prefers-color-scheme: light) {
+  :root {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-them=light] {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-theme=dark] {
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-them=dark] {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-theme=light] {
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
@@ -132,18 +244,262 @@ body {
   margin-bottom: 3px;
 }
 
-:root {
-  --black: #0D1114;
-  --grey: #1F2426;
-  --white: #FAFAFA;
-  --red: #ED4C67;
-  --purple: #B53471;
-  --purpleDark: #833471;
-  --pink: #FDA7DF;
+@media (prefers-color-scheme: light) {
+  :root {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-them=light] {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-theme=dark] {
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-them=dark] {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-theme=light] {
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+}
+button {
+  background: var(--red);
+  color: var(--white);
+  font-family: "Rubik Mono One", monospace;
+  margin: 0; /* Réinitialise la marge */
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background: var(--purpleDark);
+}
+
+button:active {
+  background: var(--purple);
+}
+
+.rappel {
+  color: var(--red);
+  font-family: "Noto Sans", Arial, sans-serif;
+  padding: 3px 10px;
+  border-radius: 10px;
+  border: 3px solid rgba(var(--red), 1);
+  flex: 1;
+}
+
+.rappel:focus {
+  outline: none; /* Supprime le contour bleu */
+}
+
+input[type=text]::placeholder {
+  color: var(--red);
+}
+
+.formulaire {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-them=light] {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-theme=dark] {
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-them=dark] {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-theme=light] {
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+}
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.checkbox input[type=checkbox] {
+  display: none;
+}
+
+.checkbox label {
+  position: relative;
+  padding-left: 30px; /* Ajustez cet espace pour le style de votre case à cocher */
+  cursor: pointer;
+}
+
+.checkbox label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 10px; /* Ajustez la taille de votre case à cocher */
+  aspect-ratio: 1/1;
+  border: 3px solid var(--red); /* Couleur de la bordure de la case à cocher */
+  border-radius: 50%; /* Bordure arrondie */
+  background-color: var(--white);
+}
+
+.checkbox input[type=checkbox]:checked + label:before {
+  background-color: var(--red);
+}
+
+.checkbox label:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  aspect-ratio: 1/1;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  display: none;
+  left: 1px;
+  top: 2px;
+}
+
+.checkbox input[type=checkbox]:checked + label:after {
+  display: block;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-them=light] {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-theme=dark] {
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-them=dark] {
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --red: #ED4C67;
+    --purple: #B53471;
+    --purpleDark: #833471;
+    --pink: #FDA7DF;
+  }
+  [data-theme=light] {
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
@@ -156,6 +512,34 @@ body {
 .logo {
   grid-column: 1/span 4;
   grid-raw: 1;
+}
+
+.switch {
+  height: 30px;
+  aspect-ratio: 9/5;
+  background: var(--red);
+  display: flex;
+  margin: 20px 20px;
+  align-self: flex-end;
+  border: 3px solid var(--red);
+  border-radius: 50px;
+  align-items: center;
+  transform: translateX(0); /* Position initiale */
+}
+.switch .round {
+  height: 90%;
+  aspect-ratio: 1/1;
+  background: aliceblue;
+  border-radius: 50%;
+  transition: transform 0.35s ease; /* Ajout de la transition */
+  transform: translateX(0); /* Position initiale */
+}
+.switch .round:hover {
+  background: cornflowerblue;
+}
+
+.selfRight .round {
+  transform: translateX(calc(100% + 3px)); /* + 3px correspond à la largeur de la bordure */
 }
 
 /*# sourceMappingURL=app.css.map */
