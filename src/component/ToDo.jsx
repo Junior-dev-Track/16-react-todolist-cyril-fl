@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
-function Form({ addTodo }) {
+function ToDo({ addTodo }) {
 
     const [todo, setTodo] = useState('')
-    const addToList = (event) => {
+    const handleSubmit = (event) => {
         event.preventDefault();
             if (todo.trim() !== '') {
                 addTodo(todo)
@@ -16,7 +16,7 @@ function Form({ addTodo }) {
 
     return (
         <>
-            <form className={'formulaire'} onSubmit={addToList}>
+            <form className={'formulaire'} onSubmit={handleSubmit}>
             <input
                 className={'champText'}
                 type={'text'}
@@ -32,4 +32,4 @@ function Form({ addTodo }) {
     )
 }
 
-export default Form
+export default ToDo

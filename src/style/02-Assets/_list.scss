@@ -1,31 +1,10 @@
 .formulaire {
-  grid-column: 1/ span 3;
-  grid-row: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
 
-.todoList {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-// To doo list
-.blockList {
-  background-color: $secondary;
-  grid-column: 1;
-  grid-row: 2 / span 18;
-  padding: 1vw 1vh;
-  border-radius: 15px;
-}
-
-
-
-.tilte2 {
-  color: $primary;
-}
 .todoList {
   display: flex;
   flex-direction: column;

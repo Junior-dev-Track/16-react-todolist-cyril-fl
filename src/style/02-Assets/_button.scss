@@ -4,11 +4,11 @@ button {
   background: $primary;
   color: $white;
   font-family: "Rubik Mono One", monospace;
-    margin: 0; /* Réinitialise la marge */
-    padding: 6px;
-    border-radius: 10px;
-    border: none;
-    transition: all 0.25s ease;
+  margin: 0;
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.25s ease;
 }
 
 button:hover {
@@ -17,4 +17,9 @@ button:hover {
 
 button:active {
   background: $purple;
+}
+
+
+.sendNoteButton {
+  width: 7%;
 }

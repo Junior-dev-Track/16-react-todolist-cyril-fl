@@ -1,29 +1,18 @@
-import { useState, useEffect } from 'react'
-import '../style/app.css'
-import Form from "./Form.jsx";
-import ToDoList from "./ToDoList.jsx";
-import Switch from "./Switch.jsx"
-import Notes from "./Notes.jsx"
+import React, { useState, useEffect } from 'react';
+// import '../style/app.css';
+import { loadFromLocalStorage, saveToLocalStorage, test } from '../script/loadNsave.js';
+import ToDo from './ToDo.jsx';
+import ToDoList from './ToDoList.jsx';
+import Switch from './Switch.jsx';
+import Notes from './Notes.jsx';
+import NotesList from './NotesList.jsx';
 
 const App = () => {
-    // Charger les rappels depuis le stockage local au chargement de l'application
-    const loadTodosFromLocalStorage = () => {
-        const todosJSON = localStorage.getItem('todos');
-        return todosJSON ? JSON.parse(todosJSON) : [];
-    };
-    const [todos, setTodos] = useState(loadTodosFromLocalStorage());
-
-    // Fonction pour enregistrer les rappels dans le stockage local
-    const saveTodosToLocalStorage = (todos) => {
-        localStorage.setItem('todos', JSON.stringify(todos));
-    };
-
-    // Mettre à jour le stockage local chaque fois que les todos changent
-    useEffect(() => {
-        saveTodosToLocalStorage(todos);
-    }, [todos]);
-
-
+    // Todos
+    const [todos, setTodos] = useState(loadFromLocalStorage('todos'));
+        useEffect(() => {
+            saveToLocalStorage('todos', todos)
+        }, [todos]);
     const  addTodo = (text) => {
         const newTodo = {
             id: Date.now(),
@@ -32,25 +21,41 @@ const App = () => {
         }
         setTodos([...todos, newTodo])
     }
-
-
+    // Notes
+    const [notes, setNotes] = useState(loadFromLocalStorage('notes'));
+        useEffect(() => {
+            saveToLocalStorage('notes', notes)
+        }, [notes]);
+    const  addNote = (text) => {
+        const newNote = {
+            id: Date.now(),
+            isDone: false,
+            content: text
+        }
+        setNotes([...notes, newNote])
+    }
 
     return (
-        <>
-            <div className={'App'}>
-                <h1 className={'tilte1 logo'}>My Todo app</h1>
-                <Switch/>
-                <div className="blockList">
-                    <Form addTodo={addTodo}/>
-                    <ToDoList todos={todos} setTodos={setTodos}/>
-                </div>
-
-                <Notes/>
+        <div className="App">
+            <h1 className="tilte1 logo">My Todo app</h1>
+            <Switch />
+            <div className="blockList">
+                <ToDo addTodo={addTodo} />
+                <ToDoList todos={todos} setTodos={setTodos} />
             </div>
-        </>
-    )
-}
+            <Notes addNote={addNote} />
+            <NotesList notes={notes} setNotes={setNotes}/>
+        </div>
+    );
+};
 
-export default App
+export default App;
 
-// todo : faire une footer et une header ?
+
+    // const [todos, setTodos] = useState(loadFromLocalStorage('todos'));
+    //
+    // useEffect(() => {
+    //     saveToLocalStorage('todos', todos)
+    // }, [todos]);
+    //
+

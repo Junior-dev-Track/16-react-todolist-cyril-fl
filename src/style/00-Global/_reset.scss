@@ -32,7 +32,10 @@ body {
   background-color: $backgroundColor;
   color: $textColor;
   padding: 2vh 2vw;
+  gap :  1vh 1vw;
 }
 
-
+* ::-webkit-scrollbar {
+  display: none;
+}
 

@@ -1,22 +1,8 @@
-
+import toggleTask from "../script/toggleTask.js";
 
 
 const ToDoList = ({ todos, setTodos }) => {
-    // Update isDone
-    const toggleTask = (taskId) => {
-        setTodos(
-            todos.map((task) => {
-                task.id === taskId ? console.log(task.content) : task
 
-
-                setTimeout(() => {
-                    setTodos(prevTodos => prevTodos.filter(todo => todo.id !== taskId));
-                }, 900);
-
-                return task.id === taskId ? {...task, isDone: !task.isDone} : task
-            }
-        ))
-    }
 
     // a corriger
     return (
@@ -31,7 +17,7 @@ const ToDoList = ({ todos, setTodos }) => {
                                 id={`myCheckbox${todo.id}`}
                                 type="checkbox"
                                 checked={todo.isDone}
-                                onChange={() => toggleTask(todo.id)}
+                                onChange={() => toggleTask(todo.id, todos, setTodos)}
                             />
                             <label htmlFor={`myCheckbox${todo.id}`}></label>
                         </div>
