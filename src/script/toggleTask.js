@@ -18,7 +18,7 @@ const toggleTask = (taskId, tasks, setTasks) => {
         // Déclenche le filtre des tâches après un certain délai
         setTimeout(() => {
             setTasks(prevTasks => prevTasks.filter(todo => todo.id !== taskId));
-        }, 900);
+        }, 150);
 
         // Retourne la nouvelle liste de tâches mise à jour
         return updatedTasks;

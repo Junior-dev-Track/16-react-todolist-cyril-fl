@@ -170,16 +170,17 @@ button:active {
   display: block;
 }
 
-.crossCheckbox {
+.noteThumbnailsCheckbox {
   position: relative;
   width: 20px;
 }
 
-.crossCheckbox input[type=checkbox] {
+.noteThumbnailsCheckbox input[type=checkbox] {
   display: none; /* Cacher la checkbox par défaut */
 }
 
-.crossCheckbox input[type=checkbox] + label::before, .crossCheckbox input[type=checkbox] + label::after {
+.noteThumbnailsCheckbox input[type=checkbox] + label::before,
+.noteThumbnailsCheckbox input[type=checkbox] + label::after {
   content: "";
   display: inline-block;
   width: 20px; /* Taille de la croix */
@@ -189,21 +190,21 @@ button:active {
   position: absolute;
 }
 
-.crossCheckbox input[type=checkbox] + label::before {
+.noteThumbnailsCheckbox input[type=checkbox] + label::before {
   transform: rotate(45deg); /* Rotation de la croix */
 }
 
-.crossCheckbox input[type=checkbox] + label::after {
+.noteThumbnailsCheckbox input[type=checkbox] + label::after {
   transform: rotate(-45deg); /* Rotation de la croix */
 }
 
-.crossCheckbox input[type=checkbox]:hover + label::before,
-.crossCheckbox input[type=checkbox]:hover + label::after {
+.noteThumbnailsCheckbox input[type=checkbox]:hover + label::before,
+.noteThumbnailsCheckbox input[type=checkbox]:hover + label::after {
   background-color: var(--primaryBis);
 }
 
-.crossCheckbox input[type=checkbox]:active + label::before,
-.crossCheckbox input[type=checkbox]:active + label::after {
+.noteThumbnailsCheckbox input[type=checkbox]:active + label::before,
+.noteThumbnailsCheckbox input[type=checkbox]:active + label::after {
   background-color: var(--secondary);
 }
 
@@ -328,7 +329,7 @@ button:active {
   grid-row: 12/span 7;
 }
 
-.notesCarouseIn {
+.notesCarouselIn {
   height: 100%;
   width: 100%;
   border-radius: 15px;

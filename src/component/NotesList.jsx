@@ -15,7 +15,7 @@ const NotesList = ({ notes, setNotes}) => {
                         <div className="noteThumbnailsContent">
                         {note.content}
                         </div>
-                        <div className="crossCheckbox">
+                        <div className="noteThumbnailsCheckbox">
                             <input
                                 id={`notes${note.id}`}
                                 type="checkbox"
