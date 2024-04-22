@@ -1,0 +1,75 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Color */
+    --black: #0D1114;
+    --grey: #1F2426;
+    --white: #FAFAFA;
+    --purple: #B53471;
+    --purpleDark: #833471;
+
+    /* Element */
+    --neutral : #ffffff;
+    --primary : #ED4C67;
+    --primaryBis: #C94057 ;
+    --secondary : #F6FDFF;
+    --secondaryBis: #F0F5FA ;
+    --tertiary : #FDA7DF;
+}
+
+[data-theme='alter'] {
+  /* Color */
+  --black: #FAFAFA;
+  --grey: #1F2426;
+  --white: #0D1114;
+  --purple: #B53471;
+  --purpleDark: #833471;
+
+  /* Element */
+  --neutral : #1F2426;
+  --primary : #F6FDFF;
+  --primaryBis: #F0F5FA ;
+  --secondary : #ED4C67;
+  --secondaryBis: #C94057 ;
+  --tertiary : #FDA7DF;
+}
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* color */
+    --black: #FAFAFA;
+    --grey: #1F2426;
+    --white: #0D1114;
+    --purple: #B53471;
+    --purpleDark: #833471;
+
+    /* Element */
+    --neutral : #1F2426;
+    --primary : #F6FDFF;
+    --primaryBis: #F0F5FA ;
+    --secondary : #ED4C67;
+    --secondaryBis: #C94057 ;
+    --tertiary : #FDA7DF;
+
+}
+
+[data-theme='alter'] {
+  /* Color */
+  --black: #0D1114;
+  --grey: #1F2426;
+  --white: #FAFAFA;
+  --purple: #B53471;
+  --purpleDark: #833471;
+
+  /* Element */
+  --neutral : #ffffff;
+  --primary : #ED4C67;
+  --primaryBis: #C94057 ;
+  --secondary : #F6FDFF;
+  --secondaryBis: #F0F5FA ;
+  --tertiary : #FDA7DF;
+}
+}
+
+/* Path: src/style/01-Color/colorTheme.css */

@@ -1,7 +1,4 @@
-@import "src/style/01-Color/colors.css";
-
-
-// Utilisation des variables dans ton code SCSS
+@import "./theme.scss";
 // By use
 $backgroundColor: var(--white);
 $textColor: var(--black);
