@@ -1,21 +1,18 @@
 @import "../00-Global/colors";
-
+// Rappel
 .todo {
   display: flex;
   align-items: center;
   justify-content: start;
 }
-
 .checkbox input[type="checkbox"] {
   display: none;
 }
-
 .checkbox label {
   position: relative;
   padding-left: 30px; /* Ajustez cet espace pour le style de votre case à cocher */
   cursor: pointer;
 }
-
 .checkbox label:before {
   content: '';
   position: absolute;
@@ -27,11 +24,9 @@
   border-radius: 50%; /* Bordure arrondie */
   background-color: unset;
 }
-
 .checkbox input[type="checkbox"]:checked + label:before {
   background-color: $primary;
 }
-
 .checkbox label:after {
   content: '';
   position: absolute;
@@ -43,7 +38,41 @@
   left: 1px;
   top: 2px;
 }
-
 .checkbox input[type="checkbox"]:checked + label:after {
   display: block;
+}
+
+// notes
+.crossCheckbox {
+  position: relative;
+  width: 20px;
+
+}
+
+.crossCheckbox input[type="checkbox"] {
+  display: none; /* Cacher la checkbox par défaut */
+}
+.crossCheckbox input[type="checkbox"] + label::before, .crossCheckbox input[type="checkbox"] + label::after {
+  content: '';
+  display: inline-block;
+  width: 20px; /* Taille de la croix */
+  height: 3px; /* Taille de la croix */
+  border-radius: 5px;
+  background-color: $primary;
+  position: absolute;
+}
+.crossCheckbox input[type="checkbox"] + label::before {
+  transform: rotate(45deg); /* Rotation de la croix */
+}
+.crossCheckbox input[type="checkbox"] + label::after {
+  transform: rotate(-45deg); /* Rotation de la croix */
+}
+
+.crossCheckbox input[type="checkbox"]:hover + label::before,
+.crossCheckbox input[type="checkbox"]:hover + label::after {
+  background-color: $primaryBis;
+}
+.crossCheckbox input[type="checkbox"]:active + label::before,
+.crossCheckbox input[type="checkbox"]:active + label::after {
+  background-color: $secondary;
 }

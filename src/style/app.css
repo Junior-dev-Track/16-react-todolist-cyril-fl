@@ -6,13 +6,12 @@
     --black: #0D1114;
     --grey: #1F2426;
     --white: #FAFAFA;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #ffffff;
     --primary: #ED4C67;
+    --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
     --secondaryBis: #F0F5FA ;
     --tertiary: #FDA7DF;
@@ -22,13 +21,12 @@
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
+    --primaryBis: #F0F5FA ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -40,13 +38,12 @@
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
+    --primaryBis: #F0F5FA ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -56,13 +53,12 @@
     --black: #0D1114;
     --grey: #1F2426;
     --white: #FAFAFA;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #ffffff;
     --primary: #ED4C67;
+    --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
     --secondaryBis: #F0F5FA ;
     --tertiary: #FDA7DF;
@@ -128,13 +124,12 @@ body {
     --black: #0D1114;
     --grey: #1F2426;
     --white: #FAFAFA;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #ffffff;
     --primary: #ED4C67;
+    --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
     --secondaryBis: #F0F5FA ;
     --tertiary: #FDA7DF;
@@ -144,13 +139,12 @@ body {
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
+    --primaryBis: #F0F5FA ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -162,13 +156,12 @@ body {
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
+    --primaryBis: #F0F5FA ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -178,13 +171,12 @@ body {
     --black: #0D1114;
     --grey: #1F2426;
     --white: #FAFAFA;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #ffffff;
     --primary: #ED4C67;
+    --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
     --secondaryBis: #F0F5FA ;
     --tertiary: #FDA7DF;
@@ -196,13 +188,12 @@ body {
     --black: #0D1114;
     --grey: #1F2426;
     --white: #FAFAFA;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #ffffff;
     --primary: #ED4C67;
+    --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
     --secondaryBis: #F0F5FA ;
     --tertiary: #FDA7DF;
@@ -212,13 +203,12 @@ body {
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
+    --primaryBis: #F0F5FA ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -230,13 +220,12 @@ body {
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
+    --primaryBis: #F0F5FA ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -246,13 +235,12 @@ body {
     --black: #0D1114;
     --grey: #1F2426;
     --white: #FAFAFA;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #ffffff;
     --primary: #ED4C67;
+    --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
     --secondaryBis: #F0F5FA ;
     --tertiary: #FDA7DF;
@@ -293,13 +281,12 @@ body {
     --black: #0D1114;
     --grey: #1F2426;
     --white: #FAFAFA;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #ffffff;
     --primary: #ED4C67;
+    --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
     --secondaryBis: #F0F5FA ;
     --tertiary: #FDA7DF;
@@ -309,13 +296,12 @@ body {
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
+    --primaryBis: #F0F5FA ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -327,13 +313,12 @@ body {
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
+    --primaryBis: #F0F5FA ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -343,13 +328,12 @@ body {
     --black: #0D1114;
     --grey: #1F2426;
     --white: #FAFAFA;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #ffffff;
     --primary: #ED4C67;
+    --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
     --secondaryBis: #F0F5FA ;
     --tertiary: #FDA7DF;
@@ -375,7 +359,7 @@ button:active {
 }
 
 .sendNoteButton {
-  width: 7%;
+  width: 50%;
 }
 
 @media (prefers-color-scheme: light) {
@@ -384,13 +368,12 @@ button:active {
     --black: #0D1114;
     --grey: #1F2426;
     --white: #FAFAFA;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #ffffff;
     --primary: #ED4C67;
+    --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
     --secondaryBis: #F0F5FA ;
     --tertiary: #FDA7DF;
@@ -400,13 +383,12 @@ button:active {
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
+    --primaryBis: #F0F5FA ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -418,13 +400,12 @@ button:active {
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
+    --primaryBis: #F0F5FA ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -434,13 +415,12 @@ button:active {
     --black: #0D1114;
     --grey: #1F2426;
     --white: #FAFAFA;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #ffffff;
     --primary: #ED4C67;
+    --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
     --secondaryBis: #F0F5FA ;
     --tertiary: #FDA7DF;
@@ -494,19 +474,55 @@ button:active {
   display: block;
 }
 
+.crossCheckbox {
+  position: relative;
+  width: 20px;
+}
+
+.crossCheckbox input[type=checkbox] {
+  display: none; /* Cacher la checkbox par défaut */
+}
+
+.crossCheckbox input[type=checkbox] + label::before, .crossCheckbox input[type=checkbox] + label::after {
+  content: "";
+  display: inline-block;
+  width: 20px; /* Taille de la croix */
+  height: 3px; /* Taille de la croix */
+  border-radius: 5px;
+  background-color: var(--primary);
+  position: absolute;
+}
+
+.crossCheckbox input[type=checkbox] + label::before {
+  transform: rotate(45deg); /* Rotation de la croix */
+}
+
+.crossCheckbox input[type=checkbox] + label::after {
+  transform: rotate(-45deg); /* Rotation de la croix */
+}
+
+.crossCheckbox input[type=checkbox]:hover + label::before,
+.crossCheckbox input[type=checkbox]:hover + label::after {
+  background-color: var(--primaryBis);
+}
+
+.crossCheckbox input[type=checkbox]:active + label::before,
+.crossCheckbox input[type=checkbox]:active + label::after {
+  background-color: var(--secondary);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     /* Color */
     --black: #0D1114;
     --grey: #1F2426;
     --white: #FAFAFA;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #ffffff;
     --primary: #ED4C67;
+    --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
     --secondaryBis: #F0F5FA ;
     --tertiary: #FDA7DF;
@@ -516,13 +532,12 @@ button:active {
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
+    --primaryBis: #F0F5FA ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -534,13 +549,12 @@ button:active {
     --black: #FAFAFA;
     --grey: #1F2426;
     --white: #0D1114;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
+    --primaryBis: #F0F5FA ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -550,13 +564,12 @@ button:active {
     --black: #0D1114;
     --grey: #1F2426;
     --white: #FAFAFA;
-    --red: #ED4C67;
     --purple: #B53471;
     --purpleDark: #833471;
-    --pink: #FDA7DF;
     /* Element */
     --neutral: #ffffff;
     --primary: #ED4C67;
+    --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
     --secondaryBis: #F0F5FA ;
     --tertiary: #FDA7DF;
@@ -650,9 +663,9 @@ button:active {
 .notefield {
   grid-column: 4/span 14;
   grid-row: 2/span 10;
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   align-items: center;
 }
 
@@ -663,11 +676,23 @@ button:active {
   resize: none;
   width: 100%;
   height: 100%;
+  grid-column: 1/span 3;
+  grid-row: 1/span 3;
 }
 
 input[type=text] {
   text-align: left;
   vertical-align: top;
+}
+
+.buttonArea {
+  grid-column: 2;
+  grid-row: 3;
+  align-self: self-end;
+  padding-bottom: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .blockList {
@@ -692,7 +717,7 @@ input[type=text] {
   border-radius: 15px;
   overflow-x: scroll;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 1vh 1vw;
 }
 

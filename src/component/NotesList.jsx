@@ -22,7 +22,8 @@ const NotesList = ({ notes, setNotes}) => {
                                 checked={note.isDone}
                                 onChange={() => toggleTask(note.id, notes, setNotes)}
                             />
-                            {/*<label htmlFor={`notes${note.id}`}></label>*/}
+                            <label htmlFor={`notes${note.id}`}></label>
+
                         </div>
                     </li>
                 ))}

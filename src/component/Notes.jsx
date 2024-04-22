@@ -13,7 +13,7 @@ const Notes = ({ addNote }) => {
             event.target.reset(); // Réinitialise le formulaire après la soumission
 
         }
-        
+
     };
 
     return (
@@ -24,7 +24,9 @@ const Notes = ({ addNote }) => {
                 placeholder="Une note ?"
                 id="note"
             ></textarea>
-            <button className={'sendNoteButton'} type="submit">GO</button>
+            <div className="buttonArea">
+                <button className={'sendNoteButton'} type="submit">GO</button>
+            </div>
         </form>
     );
 };
