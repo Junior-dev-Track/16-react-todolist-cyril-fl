@@ -76,24 +76,19 @@
 body {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scrollbar-width: none;
-  scrollbar-color: transparent transparent;
+  overflow: hidden;
 }
 
 #root {
   height: 100vh;
-  width: 100vw;
+  background-color: #B53471;
 }
 
 .App {
-  height: 100%;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
-  grid-template-rows: repeat(18, 1fr);
   background-color: var(--white);
+  background-color: #FDA7DF;
   color: var(--black);
   padding: 2vh 2vw;
   gap: 1vh 1vw;
@@ -592,11 +587,6 @@ button:active {
   }
 }
 /* Path: src/style/01-Color/colorTheme.css */
-.logo {
-  grid-column: 1/span 4;
-  grid-row: 1;
-}
-
 * {
   transition: all 0.2s ease;
 }
@@ -702,14 +692,14 @@ button:active {
   padding: 1vw 1vh;
   border-radius: 15px;
   grid-column: 1/span 3;
-  grid-row: 2/span 17;
+  grid-row: 2/span 14;
 }
 
 .notesCarouselOut {
   background-color: var(--secondary);
   padding: 1vw 1vh;
   border-radius: 15px;
-  grid-column: 4/span 14;
+  grid-column: 4/span 1;
   grid-row: 12/span 7;
 }
 

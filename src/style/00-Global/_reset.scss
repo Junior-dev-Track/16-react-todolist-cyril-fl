@@ -11,25 +11,24 @@
 body {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scrollbar-width: none;
-  scrollbar-color: transparent transparent;
+  overflow: hidden;
+  //overflow-y: scroll;
+  //scrollbar-width: none;
+  //scrollbar-color: transparent transparent;
 }
 
 #root {
   height: 100vh;
-  width: 100vw;
-  //background-color: #B53471;
+  //width: 100vw;
+  background-color: #B53471;
 }
 
 .App {
-  height: 100%;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
-  grid-template-rows: repeat(18, 1fr);
+  //grid-template-rows: repeat(18, 1fr);
   background-color: $backgroundColor;
+  background-color: #FDA7DF;
   color: $textColor;
   padding: 2vh 2vw;
   gap :  1vh 1vw;
