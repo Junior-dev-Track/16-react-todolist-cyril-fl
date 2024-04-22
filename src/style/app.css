@@ -75,20 +75,23 @@
 
 body {
   height: 100vh;
+  height: 100svh;
   width: 100vw;
   overflow: hidden;
+  background-color: var(--white);
 }
 
 #root {
   height: 100vh;
-  background-color: #B53471;
+  width: 100vw;
 }
 
 .App {
+  height: 100vh;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   background-color: var(--white);
-  background-color: #FDA7DF;
   color: var(--black);
   padding: 2vh 2vw;
   gap: 1vh 1vw;
@@ -486,7 +489,6 @@ button:active {
 
 .noteThumbnailsCheckbox {
   position: relative;
-  width: 20px;
 }
 
 .noteThumbnailsCheckbox input[type=checkbox] {
@@ -497,19 +499,21 @@ button:active {
 .noteThumbnailsCheckbox input[type=checkbox] + label::after {
   content: "";
   display: inline-block;
-  width: 20px; /* Taille de la croix */
-  height: 3px; /* Taille de la croix */
+  width: 20px;
+  height: 3px;
   border-radius: 5px;
   background-color: var(--primary);
   position: absolute;
+  top: 1vh;
+  right: 0.5vh;
 }
 
 .noteThumbnailsCheckbox input[type=checkbox] + label::before {
-  transform: rotate(45deg); /* Rotation de la croix */
+  transform: rotate(45deg);
 }
 
 .noteThumbnailsCheckbox input[type=checkbox] + label::after {
-  transform: rotate(-45deg); /* Rotation de la croix */
+  transform: rotate(-45deg);
 }
 
 .noteThumbnailsCheckbox input[type=checkbox]:hover + label::before,
@@ -587,6 +591,13 @@ button:active {
   }
 }
 /* Path: src/style/01-Color/colorTheme.css */
+.logo {
+  grid-column: 1/span 5;
+  grid-row: 1;
+  justify-self: start;
+  align-self: center;
+}
+
 * {
   transition: all 0.2s ease;
 }
@@ -596,13 +607,13 @@ button:active {
   aspect-ratio: 9/5;
   background: var(--primary);
   display: flex;
-  align-self: flex-end;
   border: 3px solid var(--primary);
   border-radius: 50px;
-  align-self: end;
+  align-self: center;
+  justify-self: end;
   align-items: center;
   transform: translateX(0); /* Position initiale */
-  grid-column: 18;
+  grid-column: 18/span 1;
   grid-row: 1;
 }
 .switch .round {
@@ -668,8 +679,8 @@ button:active {
 }
 
 .noteArea {
-  grid-column: 4/span 14;
-  grid-row: 2/span 10;
+  grid-column: 4/span 15;
+  grid-row: 2/span 12;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -691,36 +702,51 @@ button:active {
   background-color: var(--secondary);
   padding: 1vw 1vh;
   border-radius: 15px;
+  margin: 0;
   grid-column: 1/span 3;
-  grid-row: 2/span 14;
+  grid-row: 2/span 10;
+}
+
+.blockCalendar {
+  background-color: var(--secondary);
+  padding: 1vw 1vh;
+  border-radius: 15px;
+  margin: 0;
+  grid-column: 1/span 3;
+  grid-row: 12/span 6;
 }
 
 .notesCarouselOut {
   background-color: var(--secondary);
   padding: 1vw 1vh;
   border-radius: 15px;
-  grid-column: 4/span 1;
-  grid-row: 12/span 7;
+  margin: 0;
+  grid-column: 4/span 15;
+  grid-row: 14/span 4;
+  display: flex;
+  align-items: stretch;
 }
 
 .notesCarouselIn {
   height: 100%;
-  width: 100%;
   border-radius: 15px;
+  flex: 1;
   overflow-x: scroll;
   display: flex;
   justify-content: flex-start;
-  gap: 1vh 1vw;
+  align-items: center;
+  gap: 1vw;
 }
 
 .noteThumbnails {
   background-color: var(--secondary);
   padding: 1vw 1vh;
   border-radius: 15px;
+  margin: 0;
+  display: inline-flex;
   height: 100%;
   aspect-ratio: 1/1;
   background-color: var(--neutral);
-  display: flex;
 }
 
 .noteThumbnailsContent {

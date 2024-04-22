@@ -1,40 +1,50 @@
+$radius : 15px;
+
 @mixin block {
   background-color: $secondary;
   padding: 1vw 1vh;
-  border-radius: 15px;
+  border-radius: $radius;
+  margin: 0;
 }
 
 //Todolist
 .blockList {
   @include block;
   grid-column: 1/ span 3;
-  grid-row: 2 / span 14;
+  grid-row: 2 / span 10;
 }
-
+.blockCalendar {
+  @include block;
+  grid-column: 1/ span 3;
+  grid-row: 12/ span 6;
+}
 
 //Notes
 .notesCarouselOut {
   @include block;
-  grid-column: 4 / span 1;
-  grid-row: 12 / span 7;
+  grid-column: 4 / span 15;
+  grid-row: 14 / span 4;
+  display: flex;
+  align-items: stretch;
 }
 
 .notesCarouselIn {
   height: 100%;
-  width: 100%;
-  border-radius: 15px;
+  border-radius: $radius;
+  flex: 1;
   overflow-x: scroll;
   display: flex;
   justify-content: flex-start;
-  gap :  1vh 1vw;
+  align-items: center;
+  gap: 1vw;
 }
 
 .noteThumbnails {
   @include block;
+  display: inline-flex;
   height: 100%;
   aspect-ratio: 1/1;
   background-color: $neutral;
-  display: flex;
 }
 
 .noteThumbnailsContent {

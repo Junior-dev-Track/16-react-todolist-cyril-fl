@@ -8,13 +8,14 @@ $switchBordure: 3px;
   aspect-ratio: 9/5;
   background: $primary;
   display: flex;
-  align-self: flex-end;
+  //justify-self: center;
   border: $switchBordure solid $primary;
   border-radius: 50px;
-  align-self: end;
+  align-self: center;
+  justify-self: end;
   align-items: center;
   transform: translateX(0); /* Position initiale */
-  grid-column: 18;
+  grid-column: 18 / span 1;
   grid-row: 1;
 
 

@@ -45,8 +45,6 @@
 // notes
 .noteThumbnailsCheckbox {
   position: relative;
-  width: 20px;
-
 }
 
 .noteThumbnailsCheckbox input[type="checkbox"] {
@@ -56,17 +54,19 @@
 .noteThumbnailsCheckbox input[type="checkbox"] + label::after {
   content: '';
   display: inline-block;
-  width: 20px; /* Taille de la croix */
-  height: 3px; /* Taille de la croix */
+  width: 20px;
+  height: 3px;
   border-radius: 5px;
   background-color: $primary;
   position: absolute;
+  top: 1vh;
+  right: 0.5vh;
 }
 .noteThumbnailsCheckbox input[type="checkbox"] + label::before {
-  transform: rotate(45deg); /* Rotation de la croix */
+  transform: rotate(45deg);
 }
 .noteThumbnailsCheckbox input[type="checkbox"] + label::after {
-  transform: rotate(-45deg); /* Rotation de la croix */
+  transform: rotate(-45deg);
 }
 
 .noteThumbnailsCheckbox input[type="checkbox"]:hover + label::before,
