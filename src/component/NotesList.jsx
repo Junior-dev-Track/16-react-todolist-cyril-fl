@@ -8,8 +8,8 @@ const NotesList = ({ notes, setNotes}) => {
 
 
     return (
-        <div className="blockNotesOut">
-            <ul className="blockNotesIn">
+        <div className="notesCarouselOut">
+            <ul className="notesCarouselIn">
                 {notes.map((note) => (
                     <li key={note.id} className="noteThumbnails note">
                         <div className="noteThumbnailsContent">

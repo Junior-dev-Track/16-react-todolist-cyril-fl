@@ -1,4 +1,4 @@
-@import "../00-Global/colors";
+@import "../01-Color/colors";
 // Go
 button {
   background: $primary;
@@ -20,6 +20,18 @@ button:active {
 }
 
 
-.sendNoteButton {
+
+
+// Note button
+.noteButtonArea {
+  grid-column: 2;
+  grid-row: 3;
+  align-self: self-end;
+  padding-bottom: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.noteSendButton {
   width: 50%;
 }

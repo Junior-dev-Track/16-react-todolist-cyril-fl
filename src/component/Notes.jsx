@@ -17,15 +17,15 @@ const Notes = ({ addNote }) => {
     };
 
     return (
-        <form className={"notefield"} onSubmit={handleSubmit}>
+        <form className={"noteArea"} onSubmit={handleSubmit}>
             <textarea
                 type="text"
-                className="champText notefieldTxt"
+                className="champText notefield"
                 placeholder="Une note ?"
                 id="note"
             ></textarea>
-            <div className="buttonArea">
-                <button className={'sendNoteButton'} type="submit">GO</button>
+            <div className="noteButtonArea">
+                <button className={'noteSendButton'} type="submit">GO</button>
             </div>
         </form>
     );

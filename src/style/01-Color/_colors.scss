@@ -1,4 +1,5 @@
-@import './colorTheme';
+@import "src/style/01-Color/colors.css";
+
 
 // Utilisation des variables dans ton code SCSS
 // By use
@@ -11,7 +12,7 @@ $primaryBis: var(--primaryBis);
 $secondary : var(--secondary);
 $secondaryBis: var(--secondaryBis);
 $tertiary : var(--tertiary);
-
+//lll
 
 // By color
 $white: var(--white);

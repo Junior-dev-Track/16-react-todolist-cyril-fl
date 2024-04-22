@@ -1,19 +1,19 @@
 // Global
 @import "./00-Global/reset";
 @import "./00-Global/test";
-@import "./00-Global/colors";
+@import "01-Color/colors";
 
 // Font
-@import "./01-Font/fontStyle";
+@import "02-Font/fontStyle";
 
 // Asset
-@import "./02-Assets/button";
-@import "./02-Assets/checkboxes";
-@import "./02-Assets/logo";
-@import "./02-Assets/switch";
-@import "./02-Assets/list";
-@import "./02-Assets/champText";
-@import "./02-Assets/block";
+@import "03-Assets/button";
+@import "03-Assets/checkboxes";
+@import "03-Assets/logo";
+@import "03-Assets/switch";
+@import "03-Assets/list";
+@import "03-Assets/champText";
+@import "03-Assets/block";
 
 //
 //@import "./App/style";*/
