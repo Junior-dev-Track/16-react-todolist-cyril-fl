@@ -758,4 +758,9 @@ button:active {
   flex: 1;
 }
 
+.blockCalendar {
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=app.css.map */
