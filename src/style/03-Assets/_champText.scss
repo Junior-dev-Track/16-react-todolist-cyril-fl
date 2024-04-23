@@ -17,11 +17,15 @@
 // notes
 .noteArea {
   grid-column: 4 / span 15;
-  grid-row: 2/ span 12;
+  grid-row: 2/ span 13;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
+  max-height: 70vh;
+  //height: 100%;
+
+
 }
 
 .notefield {

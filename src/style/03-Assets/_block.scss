@@ -5,28 +5,36 @@ $radius : 15px;
   padding: 1vw 1vh;
   border-radius: $radius;
   margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 //Todolist
 .blockList {
   @include block;
   grid-column: 1/ span 3;
-  grid-row: 2 / span 10;
+  grid-row: 2 / span 13;
+  max-height: 70vh;
 }
 
 .blockCalendar {
   @include block;
   grid-column: 1/ span 3;
-  grid-row: 12/ span 6;
+  grid-row: 15/ span 3;
+  max-height: 25vh;
+
+
 }
 
 //Notes
 .notesCarouselOut {
   @include block;
   grid-column: 4 / span 15;
-  grid-row: 14 / span 4;
+  grid-row: 15/ span 3;
   display: flex;
   align-items: stretch;
+  max-height: 25vh;
+
 }
 
 .notesCarouselIn {
