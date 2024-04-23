@@ -758,20 +758,4 @@ button:active {
   flex: 1;
 }
 
-.blockCalendar {
-  background-color: #0D1114;
-  display: flex;
-}
-
-.calendar {
-  background-color: #0D1114;
-  width: 100%;
-  border-collapse: collapse; /* Fusionne les bordures des cellules */
-}
-
-.calendarRaw {
-  background-color: #0D1114;
-  border-collapse: collapse; /* Fusionne les bordures des cellules */
-}
-
 /*# sourceMappingURL=app.css.map */
