@@ -1,7 +1,10 @@
 
-class CalendarToolBox {
+export class CalendarToolBox {
     constructor(date = new Date()) {
         this.initDate = date;
+        this.monthNames = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
+        this.dayNames = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+
     }
 
     getYear(date) {
@@ -17,15 +20,14 @@ class CalendarToolBox {
     }
 
     getMonthName(date) {
+        date = new Date(date)
         const month = date.getMonth()
-        const monthNames = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
-        return monthNames[month]
+        return this.monthNames[month]
     }
 
     getDayName(date) {
         const day = date.getDay()
-        const dayNames = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
-        return dayNames[day]
+        return this.dayNames[day]
     }
 
     getFirstDay(date) {
@@ -46,7 +48,6 @@ class CalendarToolBox {
             const dateString = `${year}-${month}-${i}`;
             const dateObj = new Date(dateString);
             const dayName = this.getDayName(dateObj);
-            // console.log(dateObj)
 
             let day = {
                 id:`${year}${month}${i}`,
@@ -60,12 +61,10 @@ class CalendarToolBox {
         }
 
         return Calendar
-
     }
 }
 
-
-class CalendarCreate extends CalendarToolBox {
+export class Calendar extends CalendarToolBox {
     constructor() {
         super()
         this.initMonth = super.init()
@@ -92,7 +91,15 @@ class CalendarCreate extends CalendarToolBox {
             return false
         }
     }
+
+    today() {
+        const currentDate = new Date();
+        const currentDay = currentDate.getDate();
+        const currentMonth = currentDate.getMonth() + 1; // Les mois commencent à partir de 0, donc on ajoute 1
+        const currentYear = currentDate.getFullYear();
+        return `${currentYear}-${currentMonth}-${currentDay}`
+    }
 }
 
 
-export default {CalendarToolBox, CalendarCreate}
+export default { CalendarToolBox, Calendar };

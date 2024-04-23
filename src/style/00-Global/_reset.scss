@@ -28,6 +28,7 @@ body {
   grid-template-columns: repeat(18, 1fr);
   //grid-template-rows: repeat(18, 1fr);
   background-color: $backgroundColor;
+  font-family: "Noto Sans", Arial, sans-serif;
   color: $textColor;
   padding: 2vh 2vw;
   gap :  1vh 1vw;

@@ -19,19 +19,25 @@
 }
 
 .todo {
-  font-family: "Noto Sans", Arial, sans-serif;
   font-size: 0.8rem;
   margin-top: 5px;
   margin-bottom: 3px;
 }
 
 .note {
-  font-family: "Noto Sans", Arial, sans-serif;
   font-size: 0.8rem;
   margin-top: 5px;
   margin-bottom: 3px;
 }
 
+.dayName {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color : $primary;
+    //margin-top: 5px;
+    //margin-bottom: 3px;
+
+}
 
 
 

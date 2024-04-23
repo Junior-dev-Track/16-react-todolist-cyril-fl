@@ -92,6 +92,7 @@ body {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   background-color: var(--white);
+  font-family: "Noto Sans", Arial, sans-serif;
   color: var(--black);
   padding: 2vh 2vw;
   gap: 1vh 1vw;
@@ -263,17 +264,21 @@ body {
 }
 
 .todo {
-  font-family: "Noto Sans", Arial, sans-serif;
   font-size: 0.8rem;
   margin-top: 5px;
   margin-bottom: 3px;
 }
 
 .note {
-  font-family: "Noto Sans", Arial, sans-serif;
   font-size: 0.8rem;
   margin-top: 5px;
   margin-bottom: 3px;
+}
+
+.dayName {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: var(--primary);
 }
 
 @media (prefers-color-scheme: light) {
@@ -751,6 +756,22 @@ button:active {
 
 .noteThumbnailsContent {
   flex: 1;
+}
+
+.blockCalendar {
+  background-color: #0D1114;
+  display: flex;
+}
+
+.calendar {
+  background-color: #0D1114;
+  width: 100%;
+  border-collapse: collapse; /* Fusionne les bordures des cellules */
+}
+
+.calendarRaw {
+  background-color: #0D1114;
+  border-collapse: collapse; /* Fusionne les bordures des cellules */
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -4,8 +4,7 @@ import { loadFromLocalStorage, saveToLocalStorage, test } from '../script/loadNs
 import ToDo from './ToDo.jsx';
 import ToDoList from './ToDoList.jsx';
 import Switch from './Switch.jsx';
-import  { CalendarToolBox, CalendarCreate } from "../script/calendar.js";
-import { Calendar } from './Calendar.jsx';
+import CalendarView from './CalendarView.jsx';
 import Notes from './Notes.jsx';
 import NotesList from './NotesList.jsx';
 
@@ -46,7 +45,7 @@ const App = () => {
                 <ToDo addTodo={addTodo} />
                 <ToDoList todos={todos} setTodos={setTodos} />
             </div>
-            <Calendar />
+            <CalendarView />
             <Notes addNote={addNote} />
             <NotesList notes={notes} setNotes={setNotes}/>
         </div>
@@ -54,12 +53,4 @@ const App = () => {
 };
 
 export default App;
-
-
-    // const [todos, setTodos] = useState(loadFromLocalStorage('todos'));
-    //
-    // useEffect(() => {
-    //     saveToLocalStorage('todos', todos)
-    // }, [todos]);
-    //
 
