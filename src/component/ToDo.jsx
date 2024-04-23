@@ -1,14 +1,27 @@
-import { useState } from 'react'
+import {useEffect, useState} from 'react'
+import ToDoList from "./ToDoList.jsx";
+import {loadFromLocalStorage, saveToLocalStorage} from "../script/loadNsave.js";
 
-function ToDo({ addTodo }) {
+function ToDo() {
 
-    const [todo, setTodo] = useState('')
+    const [inputValue, setInputValue] = useState('')
+    const [listItems, setListItem] = useState(loadFromLocalStorage('listItems'))
+        useEffect(() => {
+            saveToLocalStorage('listItems', listItems)
+        }, [listItems]);
+
     const handleSubmit = (event) => {
+        console.log(listItems)
         event.preventDefault();
-            if (todo.trim() !== '') {
-                addTodo(todo)
-                console.log(todo)
-                setTodo('');
+            if (inputValue.trim() !== '') {
+                const listItem = {
+                    id: Date.now(),
+                    isDone: false,
+                    isVisible: true,
+                    content: inputValue
+                }
+                setListItem([...listItems, listItem])
+                setInputValue('')
             } else {
                 alert('Veuillez entrer un rappel valide.');
             }
@@ -22,12 +35,14 @@ function ToDo({ addTodo }) {
                 type={'text'}
                 placeholder={'T\'as oublié quoi ?'}
                 id={'id'}
-                value={todo}
-                onChange={ (event) => setTodo(event.target.value) }
+                value={inputValue}
+                onChange={ (event) => setInputValue(event.target.value) }
             />
 
             <button type="submit">GO</button>
             </form>
+
+                <ToDoList listItems={listItems} setListItem={setListItem} />
         </>
     )
 }

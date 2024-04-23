@@ -13,7 +13,7 @@
     --primary: #ED4C67;
     --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
-    --secondaryBis: #F0F5FA ;
+    --secondaryBis: #B8DCE6 ;
     --tertiary: #FDA7DF;
   }
   [data-theme=alter] {
@@ -26,7 +26,7 @@
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
-    --primaryBis: #F0F5FA ;
+    --primaryBis: #B8DCE6 ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -43,7 +43,7 @@
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
-    --primaryBis: #F0F5FA ;
+    --primaryBis: #B8DCE6 ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -60,7 +60,7 @@
     --primary: #ED4C67;
     --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
-    --secondaryBis: #F0F5FA ;
+    --secondaryBis: #B8DCE6 ;
     --tertiary: #FDA7DF;
   }
 }
@@ -91,6 +91,7 @@ body {
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
   background-color: var(--white);
   font-family: "Noto Sans", Arial, sans-serif;
   color: var(--black);
@@ -131,7 +132,7 @@ body {
     --primary: #ED4C67;
     --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
-    --secondaryBis: #F0F5FA ;
+    --secondaryBis: #B8DCE6 ;
     --tertiary: #FDA7DF;
   }
   [data-theme=alter] {
@@ -144,7 +145,7 @@ body {
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
-    --primaryBis: #F0F5FA ;
+    --primaryBis: #B8DCE6 ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -161,7 +162,7 @@ body {
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
-    --primaryBis: #F0F5FA ;
+    --primaryBis: #B8DCE6 ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -178,7 +179,7 @@ body {
     --primary: #ED4C67;
     --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
-    --secondaryBis: #F0F5FA ;
+    --secondaryBis: #B8DCE6 ;
     --tertiary: #FDA7DF;
   }
 }
@@ -196,7 +197,7 @@ body {
     --primary: #ED4C67;
     --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
-    --secondaryBis: #F0F5FA ;
+    --secondaryBis: #B8DCE6 ;
     --tertiary: #FDA7DF;
   }
   [data-theme=alter] {
@@ -209,7 +210,7 @@ body {
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
-    --primaryBis: #F0F5FA ;
+    --primaryBis: #B8DCE6 ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -226,7 +227,7 @@ body {
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
-    --primaryBis: #F0F5FA ;
+    --primaryBis: #B8DCE6 ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -243,7 +244,7 @@ body {
     --primary: #ED4C67;
     --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
-    --secondaryBis: #F0F5FA ;
+    --secondaryBis: #B8DCE6 ;
     --tertiary: #FDA7DF;
   }
 }
@@ -281,7 +282,7 @@ body {
 }
 
 .color {
-  color: var(--primary);
+  color: var(--primaryBis);
 }
 
 @media (prefers-color-scheme: light) {
@@ -297,7 +298,7 @@ body {
     --primary: #ED4C67;
     --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
-    --secondaryBis: #F0F5FA ;
+    --secondaryBis: #B8DCE6 ;
     --tertiary: #FDA7DF;
   }
   [data-theme=alter] {
@@ -310,7 +311,7 @@ body {
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
-    --primaryBis: #F0F5FA ;
+    --primaryBis: #B8DCE6 ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -327,7 +328,7 @@ body {
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
-    --primaryBis: #F0F5FA ;
+    --primaryBis: #B8DCE6 ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -344,7 +345,7 @@ body {
     --primary: #ED4C67;
     --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
-    --secondaryBis: #F0F5FA ;
+    --secondaryBis: #B8DCE6 ;
     --tertiary: #FDA7DF;
   }
 }
@@ -395,7 +396,7 @@ button:active {
     --primary: #ED4C67;
     --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
-    --secondaryBis: #F0F5FA ;
+    --secondaryBis: #B8DCE6 ;
     --tertiary: #FDA7DF;
   }
   [data-theme=alter] {
@@ -408,7 +409,7 @@ button:active {
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
-    --primaryBis: #F0F5FA ;
+    --primaryBis: #B8DCE6 ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -425,7 +426,7 @@ button:active {
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
-    --primaryBis: #F0F5FA ;
+    --primaryBis: #B8DCE6 ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -442,7 +443,7 @@ button:active {
     --primary: #ED4C67;
     --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
-    --secondaryBis: #F0F5FA ;
+    --secondaryBis: #B8DCE6 ;
     --tertiary: #FDA7DF;
   }
 }
@@ -547,7 +548,7 @@ button:active {
     --primary: #ED4C67;
     --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
-    --secondaryBis: #F0F5FA ;
+    --secondaryBis: #B8DCE6 ;
     --tertiary: #FDA7DF;
   }
   [data-theme=alter] {
@@ -560,7 +561,7 @@ button:active {
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
-    --primaryBis: #F0F5FA ;
+    --primaryBis: #B8DCE6 ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -577,7 +578,7 @@ button:active {
     /* Element */
     --neutral: #1F2426;
     --primary: #F6FDFF;
-    --primaryBis: #F0F5FA ;
+    --primaryBis: #B8DCE6 ;
     --secondary: #ED4C67;
     --secondaryBis: #C94057 ;
     --tertiary: #FDA7DF;
@@ -594,7 +595,7 @@ button:active {
     --primary: #ED4C67;
     --primaryBis: #C94057 ;
     --secondary: #F6FDFF;
-    --secondaryBis: #F0F5FA ;
+    --secondaryBis: #B8DCE6 ;
     --tertiary: #FDA7DF;
   }
 }
@@ -693,7 +694,6 @@ button:active {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
-  max-height: 70vh;
 }
 
 .notefield {
@@ -715,8 +715,7 @@ button:active {
   overflow-x: hidden;
   overflow-y: scroll;
   grid-column: 1/span 3;
-  grid-row: 2/span 13;
-  max-height: 70vh;
+  grid-row: 2/span 12;
 }
 
 .blockCalendar {
@@ -727,8 +726,7 @@ button:active {
   overflow-x: hidden;
   overflow-y: scroll;
   grid-column: 1/span 3;
-  grid-row: 15/span 3;
-  max-height: 25vh;
+  grid-row: 14/span 5;
 }
 
 .notesCarouselOut {
@@ -739,10 +737,9 @@ button:active {
   overflow-x: hidden;
   overflow-y: scroll;
   grid-column: 4/span 15;
-  grid-row: 15/span 3;
+  grid-row: 15/span 4;
   display: flex;
   align-items: stretch;
-  max-height: 25vh;
 }
 
 .notesCarouselIn {
@@ -776,6 +773,7 @@ button:active {
 .blockCalendar {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=app.css.map */

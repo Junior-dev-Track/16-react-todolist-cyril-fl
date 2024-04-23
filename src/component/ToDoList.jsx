@@ -1,31 +1,38 @@
 import toggleTask from "../script/toggleTask.js";
+import ToDoInput from "./ToDoInput.jsx";
 
-
-const ToDoList = ({ todos, setTodos }) => {
-
+const ToDoList = ({ listItems, setListItem }) => {
 
     return (
         <>
-            <h2 className={'tilte2'}>Todos :</h2>
-            <ul className={'todoList'}>
-                {todos.map( todo => (
-                    <li className={'todo'} key={todo.id}>
-                        {/* Utilisation de la case à cocher avec son état propre */}
+            {
+                listItems.map((listItem) => (
+                    <li className={'todo'} key={listItem.id}>
                         <div className="checkbox">
                             <input
-                                id={`myCheckbox${todo.id}`}
+                                id={`myCheckbox${listItem.id}`}
                                 type="checkbox"
-                                checked={todo.isDone}
-                                onChange={() => toggleTask(todo.id, todos, setTodos)}
+                                checked={listItem.isDone}
+                                onChange={() => toggleTask(listItem.id, listItems, setListItem)}
                             />
-                            <label htmlFor={`myCheckbox${todo.id}`}></label>
+                            <label htmlFor={`myCheckbox${listItem.id}`}></label>
                         </div>
-                        {todo.content}
+                        <div className="content">
+                            <ToDoInput
+                                listItem={listItem}
+                                listItems={listItems}
+                                setListItem={setListItem}
+                            />
+                        </div>
                     </li>
-                ))}
-            </ul>
+                ))
+            }
         </>
-    );
+    )
 };
 
 export default ToDoList;
+
+
+
+

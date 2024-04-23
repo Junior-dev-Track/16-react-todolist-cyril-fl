@@ -26,7 +26,7 @@ body {
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
-  //grid-template-rows: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
   background-color: $backgroundColor;
   font-family: "Noto Sans", Arial, sans-serif;
   color: $textColor;
