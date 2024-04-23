@@ -278,6 +278,9 @@ body {
 .dayName {
   font-size: 0.6rem;
   text-transform: uppercase;
+}
+
+.color {
   color: var(--primary);
 }
 

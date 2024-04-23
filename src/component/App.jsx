@@ -10,6 +10,10 @@ import NotesList from './NotesList.jsx';
 
 
 const App = () => {
+
+
+
+
     // Todos
     const [todos, setTodos] = useState(loadFromLocalStorage('todos'));
         useEffect(() => {
@@ -23,8 +27,18 @@ const App = () => {
         }
         setTodos([...todos, newTodo])
     }
+
+
+
+
+
+
+
     // Notes
     const [notes, setNotes] = useState(loadFromLocalStorage('notes'));
+
+
+
         useEffect(() => {
             saveToLocalStorage('notes', notes)
         }, [notes]);

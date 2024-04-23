@@ -4,6 +4,9 @@ const loadFromLocalStorage = (itemName) => {
     return itemJSON ? JSON.parse(itemJSON) : [];
 };
 
+
+
+
 // Fonction pour enregistrer les rappels dans le stockage local
 const saveToLocalStorage = (itemName, item) => {
     localStorage.setItem(itemName, JSON.stringify(item));

@@ -12,7 +12,7 @@ export class CalendarToolBox {
         return year
     }
 
-    getDayInMonth(date) {
+    getDaysInMonth(date) {
         const year = date.getFullYear()
         const month = date.getMonth()
         const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -40,13 +40,12 @@ export class CalendarToolBox {
     init() {
         const Calendar = []
         const currentDate = new Date();
-        const dayInMonth = this.getDayInMonth(currentDate);
+        const dayInMonth = this.getDaysInMonth(currentDate);
         const year = this.getYear(currentDate);
-        const month = currentDate.getMonth() + 1;
+        const month = currentDate.getMonth();
 
         for (let i = 1; i <= dayInMonth; i++) {
-            const dateString = `${year}-${month}-${i}`;
-            const dateObj = new Date(dateString);
+            const dateObj = new Date(year, month,i);
             const dayName = this.getDayName(dateObj);
 
             let day = {
@@ -71,33 +70,25 @@ export class Calendar extends CalendarToolBox {
     }
 
     isCurrentDay(date) {
-        const currentDate = new Date();
-        const givenDate = new Date(date);
+        const {currentYear, currentMonth, currentDay} = this.today()
+        const givenDate = new Date(date.dateFormat)
 
+        const givenDay = givenDate.getDate()
+        const givenMonth = givenDate.getMonth()
+        const givenYear = givenDate.getFullYear()
 
-        const currentDay = currentDate.getDate();
-        const currentMonth = currentDate.getMonth() + 1; // Les mois commencent à partir de 0, donc on ajoute 1
-        const currentYear = currentDate.getFullYear();
+        const currentDateId = `${currentYear}${currentMonth}${currentDay}`
+        const givenDateId = `${givenYear}${givenMonth}${givenDay}`
 
-        const givenDay = givenDate.getDate();
-        const givenMonth = givenDate.getMonth() + 1; // Les mois commencent à partir de 0, donc on ajoute 1
-        const givenYear = givenDate.getFullYear();
-
-        if (currentDay === givenDay &&
-            currentMonth === givenMonth &&
-            currentYear === givenYear) {
-            return true
-        } else {
-            return false
-        }
+        return currentDateId === givenDateId ? true : false
     }
 
     today() {
         const currentDate = new Date();
         const currentDay = currentDate.getDate();
-        const currentMonth = currentDate.getMonth() + 1; // Les mois commencent à partir de 0, donc on ajoute 1
+        const currentMonth = currentDate.getMonth(); // Les mois commencent à partir de 0, donc on ajoute 1
         const currentYear = currentDate.getFullYear();
-        return `${currentYear}-${currentMonth}-${currentDay}`
+        return {currentYear, currentMonth, currentDay}
     }
 }
 

@@ -4,7 +4,6 @@ import toggleTask from "../script/toggleTask.js";
 const ToDoList = ({ todos, setTodos }) => {
 
 
-    // a corriger
     return (
         <>
             <h2 className={'tilte2'}>Todos :</h2>

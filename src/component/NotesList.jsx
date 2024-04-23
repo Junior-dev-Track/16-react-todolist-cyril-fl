@@ -1,9 +1,6 @@
 import {useState} from "react";
 import toggleTask from "../script/toggleTask.js";
 
-
-
-
 const NotesList = ({ notes, setNotes}) => {
 
 
