@@ -2,15 +2,14 @@ import {useState} from "react";
 import  {CalendarToolBox, CalendarCreate} from "../script/calendar.js";
 
 const Calendar = () => {
-    let thisCalendar = new CalendarCreate();
+    // let thisCalendar = new CalendarCreate();
 
-    console.log(thisCalendar)
+    // console.log(thisCalendar)
 
     return (
         <>
             <div className="blockCalendar">
                 <h2 className={'tilte2'}>{
-                    // thisCalendar.getMonthName()
                 }</h2>
 
                 <table className="calendar">
@@ -25,4 +24,4 @@ const Calendar = () => {
     )
 }
 
-export default Calendar
+export default { Calendar }

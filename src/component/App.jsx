@@ -4,8 +4,8 @@ import { loadFromLocalStorage, saveToLocalStorage, test } from '../script/loadNs
 import ToDo from './ToDo.jsx';
 import ToDoList from './ToDoList.jsx';
 import Switch from './Switch.jsx';
-import Calendar from './Calendar.jsx';
 import  { CalendarToolBox, CalendarCreate } from "../script/calendar.js";
+import { Calendar } from './Calendar.jsx';
 import Notes from './Notes.jsx';
 import NotesList from './NotesList.jsx';
 
