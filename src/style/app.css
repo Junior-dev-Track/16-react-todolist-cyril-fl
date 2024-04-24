@@ -757,6 +757,7 @@ button:active {
   border-radius: 15px;
   height: 100%;
   display: grid;
+  grid-template-rows: repeat(auto-fill, 200px);
   overflow-x: scroll;
   gap: 1.6vh;
   scroll-snap-type: y mandatory;
