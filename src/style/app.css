@@ -755,11 +755,7 @@ button:active {
 .notesCarouselIn {
   background-color: #B8DCE6;
   height: 100%;
-  width: 100%;
   border-radius: 15px;
-  overflow-x: scroll; /* ou overflow-x: scroll; */
-  display: flex;
-  gap: 1vh;
 }
 
 .noteThumbnails {
@@ -771,7 +767,7 @@ button:active {
   overflow-y: scroll;
   /* Laissez la hauteur et la largeur non définies pour permettre le défilement */
   height: 100%;
-  aspect-ratio: 1/1;
+  width: 100%;
   background-color: var(--neutral);
 }
 

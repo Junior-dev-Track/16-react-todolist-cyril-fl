@@ -33,7 +33,6 @@ $radius : 15px;
   //display: flex;
   //align-items: stretch;
   //max-height: 25vh;
-
 }
 
 //.notesCarouselIn {
@@ -63,34 +62,30 @@ $radius : 15px;
 .notesCarouselIn {
   background-color: #B8DCE6;
   height: 100%;
-  width: 100%;
+  //width: 100%;
+  //display: inline-flex;
   border-radius: $radius;
-  //flex: 1;
-  overflow-x: scroll; /* ou overflow-x: scroll; */
+  //overflow-x: scroll; /* ou overflow-x: scroll; */
   //overflow-y: hidden; /* masquer le défilement vertical */
 
 
-  display: flex;
-  //grid-template-columns: auto;
-  //grid-template-rows: 1fr;
 
-  gap: 1vh;
-  //flex-wrap: auto;
+
+  //gap: 1vh;
 
   //justify-content: flex-start;
   //align-items: center;
 }
 
 .noteThumbnails {
-  //grid-column: span 1;
-  //grid-row: 1;
-  //margin: 1vh;
   @include block;
   //display: inline-flex;
+  //flex-wrap: nowrap;
 
   /* Laissez la hauteur et la largeur non définies pour permettre le défilement */
    height: 100%;
-   aspect-ratio: 1/1;
+  width: 100%;
+   //aspect-ratio: 1/1;
   background-color: $neutral;
 }
 
