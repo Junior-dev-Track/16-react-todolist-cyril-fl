@@ -41,8 +41,10 @@ function ToDo() {
 
             <button type="submit">GO</button>
             </form>
-
+            <h2 className="tilte2">ToDos</h2>
+            <ul className={'listItems'}>
                 <ToDoList listItems={listItems} setListItem={setListItem} />
+            </ul>
         </>
     )
 }

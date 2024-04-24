@@ -1,10 +1,5 @@
 @import "../01-Color/colors";
 // Rappel
-.todo {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
 .checkbox input[type="checkbox"] {
   display: none;
 }
@@ -45,10 +40,13 @@
 // notes
 .noteThumbnailsCheckbox {
   position: relative;
+  //top: 1vh;
+  //right: 3vh;
 }
 
 .noteThumbnailsCheckbox input[type="checkbox"] {
-  display: none; /* Cacher la checkbox par défaut */
+  //display: none; /* Cacher la checkbox par défaut */
+  visibility: hidden;
 }
 .noteThumbnailsCheckbox input[type="checkbox"] + label::before,
 .noteThumbnailsCheckbox input[type="checkbox"] + label::after {
@@ -59,8 +57,9 @@
   border-radius: 5px;
   background-color: $primary;
   position: absolute;
-  top: 1vh;
-  right: 0.5vh;
+  top: 6%;
+  right: 0%;
+  //left: 0%;
 }
 .noteThumbnailsCheckbox input[type="checkbox"] + label::before {
   transform: rotate(45deg);

@@ -75,20 +75,15 @@
 
 body {
   height: 100vh;
-  height: 100svh;
+  height: 100dvh;
   width: 100vw;
   overflow: hidden;
   background-color: var(--white);
 }
 
-#root {
-  height: 100vh;
-  width: 100vw;
-}
-
 .App {
   height: 100vh;
-  width: 100vw;
+  height: 100dvh;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(18, 1fr);
@@ -264,8 +259,8 @@ body {
   margin-bottom: 3px;
 }
 
-.todo {
-  font-size: 0.8rem;
+.item {
+  font-size: 1rem;
   margin-top: 5px;
   margin-bottom: 3px;
 }
@@ -283,6 +278,14 @@ body {
 
 .color {
   color: var(--primaryBis);
+}
+
+.listItemInput {
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-weight: 600;
+  color: var(--primary);
 }
 
 @media (prefers-color-scheme: light) {
@@ -448,12 +451,6 @@ button:active {
   }
 }
 /* Path: src/style/01-Color/colorTheme.css */
-.todo {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-
 .checkbox input[type=checkbox] {
   display: none;
 }
@@ -501,7 +498,7 @@ button:active {
 }
 
 .noteThumbnailsCheckbox input[type=checkbox] {
-  display: none; /* Cacher la checkbox par défaut */
+  visibility: hidden;
 }
 
 .noteThumbnailsCheckbox input[type=checkbox] + label::before,
@@ -513,8 +510,8 @@ button:active {
   border-radius: 5px;
   background-color: var(--primary);
   position: absolute;
-  top: 1vh;
-  right: 0.5vh;
+  top: 6%;
+  right: 0%;
 }
 
 .noteThumbnailsCheckbox input[type=checkbox] + label::before {
@@ -648,25 +645,38 @@ button:active {
   gap: 10px;
 }
 
-.todoList {
-  display: flex;
-  flex-direction: column;
+.listItems {
   flex: 1;
-  width: 100%;
   white-space: break-spaces;
   hyphens: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
-.todo {
+.item {
+  scroll-snap-align: center;
   width: 100%;
-  overflow-x: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: start;
   word-wrap: break-word; /* allow long words to break across lines */
   white-space: break-spaces; /* allow text to wrap to the next line */
   hyphens: auto; /* or 'manual' or 'none' */
+  margin: 1vh 0;
+}
+.item .content {
+  overflow: auto;
 }
 
-.todo::-webkit-scrollbar {
-  display: none;
+.listItemInput {
+  background-color: unset;
+  border: none;
+  box-shadow: none;
+}
+
+.listItemInput:focus {
+  outline: none;
 }
 
 .champText {
@@ -716,6 +726,8 @@ button:active {
   overflow-y: scroll;
   grid-column: 1/span 3;
   grid-row: 2/span 12;
+  display: flex;
+  flex-direction: column;
 }
 
 .blockCalendar {
@@ -738,19 +750,16 @@ button:active {
   overflow-y: scroll;
   grid-column: 4/span 15;
   grid-row: 15/span 4;
-  display: flex;
-  align-items: stretch;
 }
 
 .notesCarouselIn {
+  background-color: #B8DCE6;
   height: 100%;
+  width: 100%;
   border-radius: 15px;
-  flex: 1;
-  overflow-x: scroll;
+  overflow-x: scroll; /* ou overflow-x: scroll; */
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1vw;
+  gap: 1vh;
 }
 
 .noteThumbnails {
@@ -760,7 +769,7 @@ button:active {
   margin: 0;
   overflow-x: hidden;
   overflow-y: scroll;
-  display: inline-flex;
+  /* Laissez la hauteur et la largeur non définies pour permettre le défilement */
   height: 100%;
   aspect-ratio: 1/1;
   background-color: var(--neutral);

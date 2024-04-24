@@ -51,7 +51,7 @@ const ToDoInput = ({ listItem, listItems, setListItem }) => {
                 <input
                     defaultValue={inputValue}
                     onChange={handleChange}
-                    className={!listItem.isVisible ? '' : 'none'}
+                    className={`listItemInput ${!listItem.isVisible ? '' : 'none'}`}
                 />
             </form>
         </>

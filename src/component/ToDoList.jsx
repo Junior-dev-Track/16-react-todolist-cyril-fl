@@ -7,7 +7,7 @@ const ToDoList = ({ listItems, setListItem }) => {
         <>
             {
                 listItems.map((listItem) => (
-                    <li className={'todo'} key={listItem.id}>
+                    <li className={'item'} key={listItem.id}>
                         <div className="checkbox">
                             <input
                                 id={`myCheckbox${listItem.id}`}
