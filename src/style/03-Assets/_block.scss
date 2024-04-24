@@ -26,14 +26,7 @@ $radius : 15px;
 }
 
 //Notes
-.notesCarouselOut {
-  @include block;
-  grid-column: 4 / span 15;
-  grid-row: 15/ span 4;
-  //display: flex;
-  //align-items: stretch;
-  //max-height: 25vh;
-}
+
 
 //.notesCarouselIn {
 //  height: 100%;
@@ -57,39 +50,44 @@ $radius : 15px;
 //  aspect-ratio: 1/1;
 //  background-color: $neutral;
 //}
-
+.notesCarouselOut {
+  @include block;
+  grid-column: 4 / span 15;
+  grid-row: 15/ span 4;
+  overflow: hidden;
+}
 
 .notesCarouselIn {
   background-color: #B8DCE6;
-  height: 100%;
-  //width: 100%;
-  //display: inline-flex;
   border-radius: $radius;
-  //overflow-x: scroll; /* ou overflow-x: scroll; */
-  //overflow-y: hidden; /* masquer le défilement vertical */
-
-
-
-
-  //gap: 1vh;
-
-  //justify-content: flex-start;
-  //align-items: center;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  overflow-x: scroll;
+  //overflow-y:hidden;
+  //grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  //grid-template-rows: 1fr;
+  gap: 1vh;
+  scroll-snap-align: start;
 }
 
 .noteThumbnails {
+  border: 1px solid rebeccapurple;
+  width: 500px;
+  grid-row: 1;
   @include block;
-  //display: inline-flex;
-  //flex-wrap: nowrap;
-
-  /* Laissez la hauteur et la largeur non définies pour permettre le défilement */
-   height: 100%;
-  width: 100%;
-   //aspect-ratio: 1/1;
+  scroll-snap-align: start;
   background-color: $neutral;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 
 .noteThumbnailsContent {
+  //width: 1000px;
   flex: 1;
 }
