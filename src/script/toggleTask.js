@@ -1,5 +1,8 @@
 const toggleTask = (taskId, tasks, setTasks) => {
     setTasks(prevTasks => {
+
+        // Verrrifeir mais faire un task.fetch(( '' ) aurait pu marcher
+        // Verrifier le code de yasmine si jamais
         // Utilisation de map pour créer une nouvelle liste de tâches avec la tâche mise à jour
         const updatedTasks = tasks.map(task => {
             // Vérifie si la tâche actuelle correspond à l'ID de la tâche à basculer
